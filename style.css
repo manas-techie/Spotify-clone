@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+     font-family: "Ubuntu";
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type:none;
+    height: 70px;
+    background-color: black;
+    color: white;
+
+}
+
+nav ul li{
+    margin: 15px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.brand img{
+    width: 45px;
+    padding: 6px;
+}
+
+
+.container{
+    min-height: 75vh;
+    background-color: black; 
+    color: white;
+    font-family: 'Rubik Moonrocks', sans-serif;
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 7px 10px;
+    background-image: url('./assest/bg.jpg');
+
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height : 120px;
+    background-color: black;
+    color: white;
+    display : flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+
+.icons{
+    margin: 17px;
+}
+ 
+.icons i{
+    cursor: pointer;
+}
+
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+
+.songItems{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin : 12px 0px ;
+    padding: 0px 20px;
+    justify-content: space-between ;
+    align-items: center;
+    border-radius: 35px;
+
+}
+
+.songListContainer{
+    margin-top: 70px;
+}
+
+.songItems img{
+width: 44px; 
+border-radius: 50%;  
+}
+
+.timestamp{
+    margin: 0 20px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+ 
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.songInfo span{
+    padding-left: 10px;
+}
